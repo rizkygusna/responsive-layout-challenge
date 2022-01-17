@@ -1,0 +1,10 @@
+@use 'colors' as *;
+
+//adding css variables using map from colors partial on :root
+:root {
+  @each $shades, $value in map-get($colors, 'primary') {
+    --color-primary-#{$shades}: #{$value};
+  }
+  --color-secondary: #{map-get($colors, 'secondary')};
+  --color-neutral: #{map-get($colors, 'neutral')};
+}
