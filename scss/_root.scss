@@ -1,3 +1,4 @@
+@use 'colors' as *;
 //adding css variables using map from colors partial on :root
 :root {
   @each $shade, $value in map-get($colors, 'primary') {

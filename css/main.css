@@ -1,3 +1,11 @@
+:root {
+  --color-primary-100: #6f737f;
+  --color-primary-200: #3b4050;
+  --color-primary-300: #2e323f;
+  --color-secondary: #a59678;
+  --color-neutral: #fff;
+}
+
 *,
 *::before,
 *::after {
@@ -9,14 +17,11 @@ body {
   min-height: 100vh;
 }
 
-:root {
-  --color-primary-100: #6f737f;
-  --color-primary-200: #3b4050;
-  --color-primary-300: #2e323f;
-  --color-secondary: #a59678;
-  --color-neutral: #fff;
+img {
+  max-width: 100%;
 }
 
 header {
   background-color: var(--color-primary-300);
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
