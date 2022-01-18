@@ -1,14 +1,6 @@
 @use 'colors' as *;
 @use 'reset' as *;
-
-//adding css variables using map from colors partial on :root
-:root {
-  @each $shade, $value in map-get($colors, 'primary') {
-    --color-primary-#{$shade}: #{$value};
-  }
-  --color-secondary: #{map-get($colors, 'secondary')};
-  --color-neutral: #{map-get($colors, 'neutral')};
-}
+@use 'root' as *;
 
 header {
   background-color: var(--color-primary-300);
