@@ -1,5 +1,6 @@
 @use 'root' as *;
 @use 'reset' as *;
+@use 'typography' as *;
 
 header {
   background-color: var(--color-primary-300);

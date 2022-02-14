@@ -1,3 +1,4 @@
+@use 'mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
 
 body {
@@ -6,4 +7,58 @@ body {
 
 p {
   font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+  li {
+    @include to-rem(18);
+  }
+}
+
+.hero {
+  h1 {
+    @include to-rem(90);
+  }
+  p,
+  button {
+    @include to-rem(24);
+  }
+  button {
+    text-transform: uppercase;
+  }
+}
+
+article {
+  h2 {
+    @include to-rem(36);
+  }
+  p {
+    @include to-rem(21);
+  }
+}
+
+.features-item,
+.aside-item {
+  h2 {
+    @include to-rem(30);
+  }
+  p {
+    @include to-rem(18);
+  }
+}
+
+footer {
+  h2 {
+    @include to-rem(24);
+  }
+  h3 {
+    @include to-rem(21);
+  }
+  p,
+  li {
+    @include to-rem(16);
+  }
+  li {
+    font-family: 'Montserrat', sans-serif;
+  }
 }
