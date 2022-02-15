@@ -75,6 +75,35 @@ footer li {
   font-family: "Montserrat", sans-serif;
 }
 
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-color: var(--color-primary-300);
+  padding: 1em 0;
+}
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+header .container .navbar-toggler {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+}
+
+nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
 }

@@ -6,24 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Layout</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header>
-      <a class="logo" href="#"
-        ><img src="./img/logo.svg" alt="conquering responsive layout"
-      /></a>
-      <nav>
-        <ul class="nav-primary">
-          <li>home</li>
-          <li>about</li>
-          <li>contact</li>
-        </ul>
-        <ul class="nav-secondary">
-          <li>sign in</li>
-          <li>sign up</li>
-        </ul>
-      </nav>
+      <div class="container">
+        <button class="navbar-toggler" aria-label="Toggle navigation">
+          <span class="bi bi-list"></span>
+        </button>
+        <a class="logo" href="#"
+          ><img src="./img/logo.svg" alt="conquering responsive layout"
+        /></a>
+        <nav>
+          <ul class="nav-primary">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
+          <ul class="nav-secondary">
+            <li>sign in</li>
+            <li>sign up</li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero">
