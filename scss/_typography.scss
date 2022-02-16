@@ -17,14 +17,18 @@ nav ul {
 
 .hero {
   h1 {
-    @include to-rem(90);
+    @include to-rem(35);
   }
   p,
   button {
-    @include to-rem(24);
+    @include to-rem(20);
+  }
+  p {
+    line-height: 1.4em;
   }
   button {
     text-transform: uppercase;
+    font-weight: bold;
   }
 }
 

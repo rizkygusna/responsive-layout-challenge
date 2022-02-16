@@ -35,14 +35,18 @@ nav ul li {
 }
 
 .hero h1 {
-  font-size: 5.625rem;
+  font-size: 2.1875rem;
 }
 .hero p,
 .hero button {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+.hero p {
+  line-height: 1.4em;
 }
 .hero button {
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 article h2 {
@@ -106,4 +110,22 @@ nav {
   visibility: hidden;
   height: 0;
   position: absolute;
+}
+
+.hero {
+  background-color: var(--color-primary-200);
+  padding: 1em 0;
+  color: white;
+}
+.hero button {
+  margin: 1em 0;
+  padding: 0.5em 1.5em;
+  border-radius: 50em;
+  border: none;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.hero-span {
+  color: var(--color-secondary);
 }
