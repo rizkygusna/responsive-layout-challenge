@@ -34,17 +34,17 @@ nav ul {
 
 article {
   h2 {
-    @include to-rem(36);
+    @include to-rem(26);
   }
   p {
-    @include to-rem(21);
+    @include to-rem(18);
   }
 }
 
 .features-item,
 .aside-item {
   h2 {
-    @include to-rem(30);
+    @include to-rem(24);
   }
   p {
     @include to-rem(18);

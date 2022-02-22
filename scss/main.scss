@@ -2,6 +2,7 @@
 @use 'reset' as *;
 @use 'mixins' as *;
 @use 'typography' as *;
+@use 'colors' as *;
 
 .container {
   width: 80%;
@@ -52,4 +53,42 @@ nav {
 
 .hero-span {
   color: var(--color-secondary);
+}
+
+.features {
+  $primary: map-get($colors, 'primary');
+  $bg-color: map-get($primary, 100);
+  padding: 1em 0;
+  background-color: lighten($bg-color, $amount: 45%);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.features-item {
+  text-align: center;
+  h2 {
+    color: var(--color-secondary);
+  }
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  h2 {
+    color: var(--color-secondary);
+  }
+}
+
+.aside-item {
+  background-color: var(--color-primary-200);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin: 1em 0;
 }

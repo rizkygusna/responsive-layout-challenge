@@ -31,15 +31,15 @@ p {
 }
 
 nav ul li {
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 
 .hero h1 {
-  font-size: 2.1875rem;
+  font-size: 2.1875em;
 }
 .hero p,
 .hero button {
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 .hero p {
   line-height: 1.4em;
@@ -50,30 +50,30 @@ nav ul li {
 }
 
 article h2 {
-  font-size: 2.25rem;
+  font-size: 1.625em;
 }
 article p {
-  font-size: 1.3125rem;
+  font-size: 1.125em;
 }
 
 .features-item h2,
 .aside-item h2 {
-  font-size: 1.875rem;
+  font-size: 1.5em;
 }
 .features-item p,
 .aside-item p {
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 
 footer h2 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 footer h3 {
-  font-size: 1.3125rem;
+  font-size: 1.3125em;
 }
 footer p,
 footer li {
-  font-size: 1rem;
+  font-size: 1em;
 }
 footer li {
   font-family: "Montserrat", sans-serif;
@@ -128,4 +128,37 @@ nav {
 
 .hero-span {
   color: var(--color-secondary);
+}
+
+.features {
+  padding: 1em 0;
+  background-color: #e8e9eb;
+}
+.features .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-item {
+  text-align: center;
+}
+.features-item h2 {
+  color: var(--color-secondary);
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+}
+
+article h2 {
+  color: var(--color-secondary);
+}
+
+.aside-item {
+  background-color: var(--color-primary-200);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin: 1em 0;
 }

@@ -1,5 +1,5 @@
 @mixin to-rem($pixel) {
-  font-size: ($pixel/16) + rem;
+  font-size: calc($pixel/16) + em;
 }
 
 @mixin flex-box($direction: row, $space: center) {
