@@ -62,8 +62,7 @@ nav {
   background-color: lighten($bg-color, $amount: 45%);
 
   .container {
-    display: flex;
-    flex-direction: column;
+    @include flex-box(column, center);
   }
 }
 
@@ -75,8 +74,7 @@ nav {
 }
 
 .main-body {
-  display: flex;
-  flex-direction: column;
+  @include flex-box(column, center);
 }
 
 article {
@@ -91,4 +89,38 @@ article {
   text-align: center;
   padding: 1em;
   margin: 1em 0;
+}
+
+footer {
+  background-color: var(--color-primary-200);
+  padding: 1em 0;
+
+  h2 {
+    color: white;
+    text-align: center;
+  }
+
+  h3 {
+    color: var(--color-secondary);
+  }
+
+  p,
+  li {
+    color: white;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      text-transform: capitalize;
+      margin: 1em 0;
+    }
+  }
 }
