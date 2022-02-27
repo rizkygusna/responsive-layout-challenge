@@ -124,3 +124,15 @@ footer {
     }
   }
 }
+
+@media (min-width: 700px) {
+  .footer-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .footer-item {
+      width: 50%;
+    }
+  }
+}

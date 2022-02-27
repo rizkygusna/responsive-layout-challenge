@@ -66,3 +66,9 @@ footer {
     font-family: 'Montserrat', sans-serif;
   }
 }
+
+@media (min-width: 700px) {
+  footer h2 {
+    font-size: 2em;
+  }
+}

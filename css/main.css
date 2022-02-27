@@ -79,6 +79,11 @@ footer li {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (min-width: 700px) {
+  footer h2 {
+    font-size: 2em;
+  }
+}
 .container {
   width: 80%;
   max-width: 1200px;
@@ -194,4 +199,15 @@ footer ul {
 footer ul li {
   text-transform: capitalize;
   margin: 1em 0;
+}
+
+@media (min-width: 700px) {
+  .footer-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-item-wrapper .footer-item {
+    width: 50%;
+  }
 }
