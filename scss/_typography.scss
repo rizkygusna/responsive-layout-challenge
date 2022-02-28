@@ -72,3 +72,29 @@ footer {
     font-size: 2em;
   }
 }
+
+@media (min-width: 1000px) {
+  .hero {
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  .features-item {
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .aside-item {
+    p {
+      font-size: 1em;
+    }
+  }
+
+  footer {
+    h2 {
+      font-size: 3em;
+    }
+  }
+}

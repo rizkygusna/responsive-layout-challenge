@@ -73,10 +73,6 @@ nav {
   }
 }
 
-.main-body {
-  @include flex-box(column, center);
-}
-
 article {
   h2 {
     color: var(--color-secondary);
@@ -142,15 +138,18 @@ footer {
     @include flex-box($space: space-between);
     flex-grow: 1;
   }
+
   .navbar-toggler {
     display: none;
   }
+
   nav {
     width: 70%;
     position: static;
     visibility: visible;
     @include flex-box($space: flex-end);
     gap: 3em;
+
     ul {
       display: flex;
       align-items: center;
@@ -158,10 +157,87 @@ footer {
       list-style: none;
       margin: 0;
       padding: 0;
+
       li {
         color: white;
-        text-transform: uppercase;
         margin: 1em 0;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  .hero {
+    padding: 5em 0;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+
+      h1 {
+        width: 45%;
+        line-height: 1em;
+      }
+
+      .hero-body {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        button {
+          width: 12em;
+        }
+      }
+    }
+  }
+
+  .features {
+    padding: 2em 0;
+  }
+
+  .features .container {
+    flex-direction: row;
+    gap: 5em;
+  }
+
+  .main-body {
+    margin: 3em 0;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      article {
+        width: 60%;
+      }
+
+      aside {
+        width: 30%;
+      }
+    }
+  }
+
+  footer {
+    .footer-nav {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .footer-about {
+        width: 40%;
+      }
+      .footer-item-wrapper {
+        width: 50%;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        gap: 1em;
       }
     }
   }
