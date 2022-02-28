@@ -10,6 +10,15 @@
   margin: 0 auto;
 }
 
+.btn-primary {
+  margin: 1em 0;
+  padding: 0.5em 1.5em;
+  border-radius: 50em;
+  border: none;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
 header {
   background-color: var(--color-primary-300);
   padding: 1em 0;
@@ -40,15 +49,6 @@ nav {
   background-color: var(--color-primary-200);
   padding: 1em 0;
   color: white;
-
-  button {
-    margin: 1em 0;
-    padding: 0.5em 1.5em;
-    border-radius: 50em;
-    border: none;
-    background-color: var(--color-secondary);
-    color: white;
-  }
 }
 
 .hero-span {
@@ -133,6 +133,36 @@ footer {
 
     .footer-item {
       width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  header .container {
+    @include flex-box($space: space-between);
+    flex-grow: 1;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  nav {
+    width: 70%;
+    position: static;
+    visibility: visible;
+    @include flex-box($space: flex-end);
+    gap: 3em;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        color: white;
+        text-transform: uppercase;
+        margin: 1em 0;
+      }
     }
   }
 }

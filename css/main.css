@@ -90,6 +90,15 @@ footer li {
   margin: 0 auto;
 }
 
+.btn-primary {
+  margin: 1em 0;
+  padding: 0.5em 1.5em;
+  border-radius: 50em;
+  border: none;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
 header {
   background-color: var(--color-primary-300);
   padding: 1em 0;
@@ -120,14 +129,6 @@ nav {
 .hero {
   background-color: var(--color-primary-200);
   padding: 1em 0;
-  color: white;
-}
-.hero button {
-  margin: 1em 0;
-  padding: 0.5em 1.5em;
-  border-radius: 50em;
-  border: none;
-  background-color: var(--color-secondary);
   color: white;
 }
 
@@ -209,5 +210,42 @@ footer ul li {
   }
   .footer-item-wrapper .footer-item {
     width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  nav {
+    width: 70%;
+    position: static;
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    gap: 3em;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    color: white;
+    text-transform: uppercase;
+    margin: 1em 0;
   }
 }
